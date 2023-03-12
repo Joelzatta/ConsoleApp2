@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 
 namespace ConsoleApp2
 {
@@ -10,10 +7,23 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            _ = new string[3];
+            int numero;
+            int contador;
+            int resultado;
 
+            Console.WriteLine("Digite um numero");
+            numero = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Digite um numero para o contador");
+            contador = Convert.ToInt32(Console.ReadLine());
 
+            for (int i = 0; i <= contador; i++)
+            {
+                resultado = numero * i;
+
+                Console.WriteLine($"{numero} x {i} = {resultado}");
+
+            }
             Console.Read();
         }
     }
